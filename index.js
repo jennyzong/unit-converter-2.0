@@ -18,12 +18,13 @@ const poundToGram = 453.592
 
 
 convertBtn.addEventListener('click',function(){
-    meters.innerHTML = `${input.value} meters = ${(input.value * meterToFeet).toFixed(3)} feet | 
-    ${input.value} feet = ${(input.value * feetToMeter).toFixed(3)} meters`
+    let listenValue = input.value
+    meters.innerHTML = `${listenValue} meters = ${(listenValue * meterToFeet).toFixed(3)} feet | 
+    ${listenValue} feet = ${(listenValue * feetToMeter).toFixed(3)} meters`
     
-    liters.innerHTML = `${input.value} liters = ${(input.value * literToGallon).toFixed(3)} gallons | 
-    ${input.value} gallonst = ${(input.value * gallonToliter).toFixed(3)} liters`
+    liters.innerHTML = `${listenValue} liters = ${(listenValue * literToGallon).toFixed(3)} gallons | 
+    ${listenValue} gallonst = ${(listenValue * gallonToliter).toFixed(3)} liters`
     
-    kilos.innerHTML = `${input.value} kilos = ${(input.value * kilogramToPound).toFixed(3)} pounds | 
-    ${input.value} pounds = ${(input.value * poundToGram).toFixed(3)} kilos`
+    kilos.innerHTML = `${listenValue} kilos = ${(listenValue * kilogramToPound).toFixed(3)} pounds | 
+    ${listenValue} pounds = ${(listenValue * poundToGram).toFixed(3)} kilos`
 })
